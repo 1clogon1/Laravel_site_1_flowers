@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Roboto"),
+        /* Если не получилось, загрузит woff2 */
+    url("/storage/Old Soviet/Old-soviet.otf") format("otf");
+}
+
+/* Теперь можно использовать шрифт */
+.my_font_face  {
+    font-family: "Roboto", "Old-soviet", sans-serif;
+}
